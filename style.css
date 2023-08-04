@@ -23,9 +23,11 @@
 .header{
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
-    padding: 10px
+    grid-template-rows: 0.8fr 1.5fr;
+    background-color: white;
+    padding: 5px;
+    position: relative;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
 }
 
 .top-header{
@@ -50,6 +52,7 @@
 }
 
 .bottom-header{
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 20px 20px 0px 30px;
@@ -95,8 +98,8 @@ header p{
 }
 
 .profile-pic-large {
-    width: 80px;
-    height:80px;
+    width: 70px;
+    height:70px;
     border-radius: 50px;
     border: 1px solid rgb(197, 197, 197);
     margin-right: 15px;
@@ -108,6 +111,40 @@ header p{
     font-weight: bold;
     margin-bottom: 12px;
     margin-right: 12px;
+}
+
+.greeting {
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.name {
+    font-size: 23px;
+}
+
+.make-post{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 25vw;
+    max-width: 276px;
+    min-width: 263px;
+    margin-bottom: 18px;
+}
+
+.head-button {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #3882F6;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 
@@ -178,7 +215,7 @@ a{
 .main{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 3fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr 3fr;
     background-color: rgb(237, 237, 237);
     gap: 15px;
     color: black;
@@ -205,16 +242,6 @@ a{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
     background-image: linear-gradient(left, #f5a609, #f5a609 2%, transparent 2%, transparent 100%);
     background-image: -webkit-linear-gradient(left, #f5a609, #f5a609 2%, transparent 2%, transparent 100%);
-}
-
-button{
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    background-color: #3882F6;
-    color: white;
-    font-weight:bold;
-    font-size: 14px;
-    border: none;
 }
 
 .project p{
@@ -247,8 +274,8 @@ ul.interactions{
     grid-row:1/2;
     font-size: 20px;
     text-align: left;
-    margin-left: 10px;
-    align-items: bottom;
+    align-self: end;
+    margin-left: 15px;
 }
 
 .main h1.annoucnement{
