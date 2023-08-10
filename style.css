@@ -20,6 +20,7 @@
     font-family: Helvetica;
 }
 
+/* header start */
 .header{
     grid-column: 2/3;
     display: grid;
@@ -147,6 +148,10 @@ header p{
     margin-right: 10px;
 }
 
+/* header stop */
+
+/* sidebar start */
+
 
 .sidebar{
     color: white;
@@ -211,6 +216,10 @@ a{
     font-size: 20px;
     font-weight: 200;
 }
+
+/* sidebar stop */
+
+/* main start */
 
 .main{
     display: grid;
@@ -278,18 +287,36 @@ ul.interactions{
     margin-left: 15px;
 }
 
-.main h1.annoucnement{
+.main h1.announcement{
     grid-row:1/2;
     grid-column: 2/3;
     text-align: left;
+    align-self: end;
     font-size: 20px;
+    margin-left: 15px;
+    
 }
 
 .main h1.trending{
     grid-row:3/4;
     grid-column: 2/3;
     text-align: left;
+    align-self: end;
     font-size: 20px;
+    margin-left: 15px;
+}
+
+.main .announcements h1{
+    font-size: 16px;
+    margin-bottom: 3px;
+    margin-left:0px;
+    text-align: left;
+}
+
+.main .announcements p{
+    font-size: 14px;
+    text-align: left;
+    color:rgb(91, 91, 91);
 }
 
 .announcements{
@@ -298,19 +325,57 @@ ul.interactions{
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 8px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    margin-left:15px;
     margin-right:10px;
+    padding: 20px 20px 20px 20px;
+    min-width: 231px;
 }
+
+hr {
+    margin: 15px 0 15px 0;
+}
+
 
 .trendings{
     grid-row: 4/5;
     margin-right:10px;
     border-radius: 5px;
-    padding: 8px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
     background-color: white;
+    margin-left:15px;
     margin-bottom: 15px;
+    margin-right:10px;
+    padding: 20px 20px 20px 20px;
+    min-width: 231px;
+}
+
+.trending-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trending-profile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.trending-profile img {
+    margin-right: 10px;
+}
+
+.trending-username {
+    font-size: 12px;
+    font-weight: 400px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.trending-project {
+    font-size: 12px;
+    text-align: left;
+    color: rgb(88, 88, 88);
 }
 
 .clickable:hover {
@@ -319,6 +384,6 @@ ul.interactions{
 }
 
 
-
+/* main stop */
 
 
